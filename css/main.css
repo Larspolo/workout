@@ -1,0 +1,63 @@
+body {
+    height: 100vh;
+    background: #36393f;
+    font-family: Arial;
+}
+#session {
+    height: 100%;
+}
+.card {
+    border-left: 7px #3f51b5 solid;
+    background: #2f3136;
+    color: #f6f6f7;
+    font-size: 24px;
+    transition: all 0.2s;
+}
+.card.hover:hover {
+    background: #202225;
+    color: white;
+    cursor: pointer;
+}
+.controls {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #f6f6f7;
+    height: 56px;
+}
+.controls i {
+    padding: 10px;
+    transition: all 0.5s;
+}
+.controls i:hover {
+    background: #202225;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+.flat {
+    background: none;
+    border: none;
+    box-shadow: unset;
+}
+.time {
+    font-size: 22px;
+}
+@media only screen and (max-width: 992px) {
+    nav {
+        height: 128px;
+    }
+    .brand-logo {
+        font-size: 66px!important;
+        line-height: 128px;
+    }
+    .controls, .title, .card {
+        font-size: 42px!important;
+    }
+    .card {
+        margin: 12px 0 24px 0;
+        border-left-width: 16px;
+    }
+    .time {
+        font-size: 32px;
+    }
+}
